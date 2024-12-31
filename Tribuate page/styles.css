@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Added a background color for better visibility */
+  color: #333; /* Darker text for better contrast */
+}
+
+main {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white; /* Added a white background to the main section */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+  border-radius: 5px;
+  text-align: center; /* Center the text within the main element */
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column; /* Align image and caption vertically */
+  align-items: center;    /* Center content horizontally */
+  margin-bottom: 20px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Important for centering */
+  margin: 0 auto; /* Center the image horizontally */
+  border-radius: 5px;
+}
+
+#img-caption {
+  font-style: italic;
+  margin-top: 5px;
+  text-align: center; /* Center the caption text */
+}
+
+#tribute-info {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify; /* Justify the text for a cleaner look */
+}
+
+#tribute-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#tribute-link:hover {
+  color: #0056b3;
+}
