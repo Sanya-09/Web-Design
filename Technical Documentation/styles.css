@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Allow positioning of navbar and content */
+}
+
+#navbar {
+  width: 200px;
+  padding: 20px;
+  background-color: #ddd;
+  border-right: 1px solid #ccc;
+  position: fixed; /* Fix navbar to the left side */
+  top: 0;
+  bottom: 0; /* Make navbar full height */
+}
+
+#navbar header {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.nav-link:hover {
+  background-color: #eee;
+}
+
+#main-doc {
+  flex: 1; /* Take up remaining space */
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  #navbar {
+    position: static; /* Don't fix navbar on small screens */
+  }
+  #main-doc {
+    padding: 10px;
+  }
+}
