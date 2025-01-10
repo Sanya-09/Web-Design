@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PAYMENT FORM</title>
+</head>
+<body>
+    <form action="">
+        <h1>Payment Form</h1>
+        <hr>
+        <h2>Contact Information</h2>
+        <p>Required Fields are followed by *</p>
+    <!--will use required for important details -->
+        <p>Name: *<input type="text" name="name" required></p>
+        <!--fieldset to combine them together 
+        legend to give them a tag-->
+        <fieldset>
+            <legend>Gender*</legend>
+        <p>
+            Male <input type="radio" name="gender" id="gender" required>
+            Female <input type="radio" name="gender" id="gender" required>
+        </p>
+    </fieldset>
+    <p>Address: <textarea name="address" id="address" cols="100" rows="8"></textarea></p>
+    <p>Email:* <input type="email" name="email" id="email" required></p>
+    <p>Pincode:* <input type="number" name="pincode" id="pincode" required></p>
+    <hr>
+       <h2>Payment Information</h2>
+       <p>
+        Card Type:*
+        <select name="card_type" id="card_type" required>
+            <option value="">--Select the Card Type--</option>
+            <option value="visa">VISA</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="rupay">RuPay</option>
+        </select>
+       </p>
+       <p>Card Number:* <input type="number" name="card_number" id="card_number" required></p>
+       <p>Expiration Date:* <input type="date" name="exp" id="exp" required></p>
+       <!--password input so that it is not visible what user is typing -->
+       <p>CVV:* <input type="password" name="cvv" id="cvv" required></p>
+       <!-- BUTTON TO SUBMIT FORM-->
+        <input type="submit" value="Pay Now">
+    </form>
+</body>
+</html>
