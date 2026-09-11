@@ -6,7 +6,7 @@ span[class~="sr-only"] {
   width: 1px !important;
   position: absolute !important;
   overflow: hidden !important;
-  white-space: nowrap !important;
+  white-space: nowrap !important; 
   padding: 0 !important;
   margin: -1px !important;
 }
